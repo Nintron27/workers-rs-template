@@ -1,0 +1,14 @@
+[template]
+cargo_generate_version = ">=0.10.0"
+
+[placeholders.project-description]
+type = "string"
+prompt = "Project description"
+
+[placeholders.use_tabs]
+type = "bool"
+prompt = "Want to use tabs?"
+default = true
+
+[conditional.'use_tabs == false']
+ignore = [ ".rustfmt.toml" ]
