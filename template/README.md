@@ -15,8 +15,10 @@
 
 * run `wrangler dev --local`
 
-### NPM
+### NPM & Cargo
 
+* Install the rust toolchain in order to have cargo installed by following
+  [this](https://www.rust-lang.org/tools/install) guide.
 * Install Wrangler with `npm ci`
 * run `npm run dev`
 
@@ -26,6 +28,6 @@
 
 * run `wrangler public`
 
-### NPM
+### NPM & Cargo
 
 * run `npm run deploy`

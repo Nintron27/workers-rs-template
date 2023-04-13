@@ -12,8 +12,11 @@ in
       pkgs.pkg-config
       pkgs.openssl
       pkgs.rust-analyzer-unwrapped
-      pkgs.nodePackages.wrangler
     ];
 
     RUST_SRC_PATH = "${toolchain}/lib/rustlib/src/rust/library";
+
+    shellHook = ''
+      export PATH="$PATH:$HOME/.cargo/bin"
+    '';
   }
